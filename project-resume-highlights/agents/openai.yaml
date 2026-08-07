@@ -1,0 +1,4 @@
+interface:
+  display_name: "项目简历亮点生成"
+  short_description: "扫描项目证据并生成真实、专业、可面试展开的简历项目经历"
+  default_prompt: "使用 $project-resume-highlights 扫描当前项目并生成简历中的项目描述、主要工作和技术亮点。"
