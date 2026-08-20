@@ -1,0 +1,4 @@
+interface:
+  display_name: "开源贡献教练"
+  short_description: "筛选合适项目与 Issue，协作实现、测试、提交 PR 并沉淀真实经历"
+  default_prompt: "Use $open-source-contribution-coach to find a suitable open-source issue and guide me through a real, review-ready contribution."
