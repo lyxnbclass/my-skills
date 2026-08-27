@@ -1,0 +1,4 @@
+interface:
+  display_name: "算法题面试讲解"
+  short_description: "按六段固定结构输出 Java 与 Python 双语言算法题解析和面试表达"
+  default_prompt: "使用 $algorithm-interview-solver 解答这道算法题，并提供 Java、Python 实现和面试话术。"
