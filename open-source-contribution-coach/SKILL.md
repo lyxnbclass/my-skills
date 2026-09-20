@@ -16,6 +16,7 @@ Guide the user through one real, useful contribution at a time. Optimize for mai
 - Do not describe a candidate or local experiment as an open-source contribution. An open PR may be described as “submitted”; only use “merged” after verifying it.
 - Prefer a small, complete, tested improvement over an ambitious architectural rewrite.
 - Do not post comments, push branches, open/close PRs, send follow-ups, or otherwise speak publicly for the user without explicit action-time approval. Drafting is allowed.
+- Keep GitHub comments and review replies brief, direct, and human. Match the repository's tone; avoid polished filler, repeated context, ceremonial thanks, and multi-paragraph summaries when one sentence is enough. Read the GitHub comment style section in [references/rubrics-and-templates.md](references/rubrics-and-templates.md) before drafting public comments.
 - Do not spam maintainers or mass-produce low-value PRs. Follow the repository's communication norms and make at most one polite follow-up unless the maintainer replies.
 - Never bypass a CLA, DCO, license, security policy, embargo, or disclosure process.
 
@@ -108,7 +109,7 @@ Inspect the relevant code path and repository conventions. Define:
 - compatibility, dependency, and test constraints;
 - whether an issue comment or design discussion is required first.
 
-For non-trivial features or ambiguous bugs, draft a concise maintainer comment that states the observed problem, proposed direction, tests, and a question about fit. Do not post it until the user approves the exact text and destination.
+For non-trivial features or ambiguous bugs, draft a concise maintainer comment that states only the context needed to understand the proposed direction and question. Use the comment style and short alignment example in the reference file. Do not post it until the user approves the exact text and destination.
 
 Do not begin implementation if the issue is already claimed, the requested behavior conflicts with repository guidance, or maintainers require prior design approval.
 
@@ -158,7 +159,7 @@ Read review threads with their resolution state and surrounding code. Classify f
 - already resolved or superseded;
 - conflicting feedback requiring maintainer clarification.
 
-Implement only the selected or clearly required changes, rerun relevant tests, and draft concise responses. Do not post responses or resolve threads without authorization.
+Implement only the selected or clearly required changes, rerun relevant tests, and draft concise responses. For ordinary review replies, default to one natural sentence such as `Fixed: <what changed>.` or `Thanks for the review — I'll fix it.` Add test details or reasoning only when they help the reviewer. Do not post responses or resolve threads without authorization.
 
 If there is no response, follow repository norms. As a default, wait 5–7 business days after the last contributor action before drafting one polite follow-up. Never use a maintainer's personal email unless the project explicitly lists it as the contribution channel.
 

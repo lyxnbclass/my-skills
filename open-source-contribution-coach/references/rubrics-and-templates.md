@@ -61,13 +61,60 @@ Reject or pause when security implications are undisclosed, expected behavior is
 - Last verified at:
 ```
 
+## GitHub comment style
+
+Write comments like a developer responding in an active thread, not like a formal report or customer-service message.
+
+Default rules:
+
+- Keep routine replies to one sentence; use two only when a reason or test result matters.
+- Lead with the status or decision: `Fixed:`, `Updated:`, `I agree`, `I’ll fix it`, or the direct question.
+- State only what changed or what is blocking progress. Do not repeat the reviewer’s full request.
+- Match the maintainer’s language, punctuation, and level of formality. Contractions are fine.
+- Use plain text for simple replies. Do not add headings, bullet lists, greetings, or sign-offs unless the content genuinely needs structure.
+- Avoid generic filler such as `Thank you for your valuable feedback`, `I have carefully reviewed your suggestion`, `Great catch!`, or `Please let me know if you have any further concerns`.
+- Do not thank the reviewer in every thread. A short `Thanks` is enough when acknowledgement is useful.
+- Do not say `Fixed` until the change is pushed. Do not promise a fix when it has already been made.
+- Mention tests only when they were actually run and the result helps the reviewer.
+- Preserve necessary technical precision; concise does not mean vague.
+
+Prefer:
+
+```text
+Fixed: switched the fallback to `SKIP` and added a regression test.
+```
+
+```text
+Thanks for the review — I'll fix it.
+```
+
+```text
+Updated the test to cover the empty-input case.
+```
+
+```text
+I kept this check here because the value can change after deserialization. Would you prefer it in the converter?
+```
+
+```text
+Do you want this to cover nested records too, or keep it scoped to top-level fields?
+```
+
+Avoid:
+
+```text
+Thank you for your valuable feedback. I have carefully reviewed your suggestion and implemented the requested changes. I also added comprehensive tests to ensure the solution is robust. Please let me know if you have any further concerns.
+```
+
+For several related changes, one compact list is acceptable, but do not turn a review reply into a PR summary. A structured PR body may be longer; these rules mainly govern issue comments, review-thread replies, and follow-ups.
+
 ## Maintainer alignment comment
 
 ```text
-Hi! I reproduced/confirmed <problem> in <location or version>. I am considering a focused change that <approach>, with tests covering <cases>. I would keep <non-goals> out of scope. Would this direction be useful, and is there any existing work or design constraint I should account for before starting?
+Hi, I reproduced <problem> in <location or version>. I'm planning to <approach> and add tests for <cases>. Does that direction look right?
 ```
 
-Adapt to the repository's tone. State facts only and keep it below roughly 150 words.
+Adapt to the repository's tone. Add non-goals or design constraints only when they materially affect the decision. State facts only and keep it as short as the context allows.
 
 ## Pull request template
 
