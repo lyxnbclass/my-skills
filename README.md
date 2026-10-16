@@ -8,6 +8,7 @@
 | --- | --- | --- |
 | [daily-work-report](./daily-work-report/) | 将零散工作记录整理为可直接粘贴到飞书或企业微信的中文工作日报 | `$daily-work-report 根据以下记录生成今天的日报：……` |
 | [project-resume-highlights](./project-resume-highlights/) | 扫描项目证据，生成真实且可在面试中展开的简历项目经历 | `$project-resume-highlights 扫描当前项目并生成简历亮点` |
+| [internship-impact-story](./internship-impact-story/) | 梳理实习工作、项目背景与真实指标，提炼可归属的个人贡献 | `$internship-impact-story 帮我整理这段实习经历并准备简历与面试讲述` |
 | [open-source-contribution-coach](./open-source-contribution-coach/) | 筛选合适的开源项目与 Issue，协作实现、测试、提交 PR 并沉淀真实经历 | `$open-source-contribution-coach 根据我的技术栈寻找合适的开源 Issue` |
 | [algorithm-interview-solver](./algorithm-interview-solver/) | 通俗讲解算法题，先给 Java、Python 完整代码，再拆解核心思路与面试话术 | `$algorithm-interview-solver 讲解这道算法题：……` |
 
@@ -28,6 +29,10 @@ my-skills/
 │  │  └─ writing-rules.md
 │  └─ assets/
 │     └─ project-resume-template.md
+├─ internship-impact-story/
+│  ├─ SKILL.md
+│  └─ references/
+│     └─ workflow.md
 ├─ open-source-contribution-coach/
 │  ├─ SKILL.md
 │  ├─ agents/
@@ -47,6 +52,7 @@ my-skills/
 ```text
 $skill-installer https://github.com/lyxnbclass/my-skills/tree/main/daily-work-report
 $skill-installer https://github.com/lyxnbclass/my-skills/tree/main/project-resume-highlights
+$skill-installer https://github.com/lyxnbclass/my-skills/tree/main/internship-impact-story
 $skill-installer https://github.com/lyxnbclass/my-skills/tree/main/open-source-contribution-coach
 $skill-installer https://github.com/lyxnbclass/my-skills/tree/main/algorithm-interview-solver
 ```
@@ -66,6 +72,7 @@ $skill-installer https://github.com/lyxnbclass/my-skills/tree/main/algorithm-int
 ```text
 $daily-work-report 根据我今天的工作记录生成一份可直接发送的日报。
 $project-resume-highlights 扫描当前项目并生成简历中的项目描述、主要工作和技术亮点。
+$internship-impact-story 帮我梳理实习任务的背景、个人贡献、验证证据和面试讲述。
 $open-source-contribution-coach 根据我的技术栈、目标岗位和每周可投入时间，筛选合适的开源项目与 Issue。
 $algorithm-interview-solver 先给出 Java、Python 完整代码，再通俗讲解这道算法题和面试话术。
 ```
